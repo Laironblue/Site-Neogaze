@@ -1,0 +1,28 @@
+NEOGAZE - SITE SIMPLES PARA EDITAR NO COMPUTADOR
+
+COMO ABRIR
+1. Extraia o arquivo ZIP para uma pasta do computador.
+2. Abra a pasta NeoGaze_Site_Simples.
+3. Dê dois cliques em index.html para ver o site no navegador.
+
+COMO EDITAR
+1. Clique com o botão direito em index.html.
+2. Escolha "Abrir com" e selecione Bloco de Notas ou Visual Studio Code.
+3. Procure os comentários "EDITE AQUI".
+4. Troque apenas os textos entre as tags HTML. Exemplo:
+   <h1>Meu título</h1>
+   Troque "Meu título", mas mantenha <h1> e </h1>.
+5. Salve o arquivo e atualize a página no navegador.
+
+COMO ADICIONAR DOCUMENTOS
+1. Copie os documentos para a pasta documentos.
+2. No index.html, localize a seção "Documentos do projeto".
+3. Altere o nome do arquivo no link href para o nome exato do arquivo.
+   Exemplo:
+   href="documentos/meu_arquivo.docx"
+
+IMPORTANTE
+- Mantenha index.html e a pasta documentos no mesmo nível.
+- Os links dos documentos funcionam localmente quando a estrutura de pastas é mantida.
+- Para publicar o site na internet, envie index.html e a pasta documentos para o repositório do site.
+- Este site apresenta o conceito do projeto. Parâmetros térmicos e de segurança precisam de validação técnica.
