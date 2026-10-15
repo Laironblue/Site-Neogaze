@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoGaze | Automação Industrial</title>
+
+  <style>
+      --fundo: #101827;
+      --cartao: #182538;
+      --destaque: #25c2b5;
+      --texto: #f4f7fb;
+      --texto-suave: #c3cfdd;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f5f8;
+      color: #182230;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--fundo);
+      color: var(--texto);
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .logo { font-size: 1.45rem; font-weight: 800; letter-spacing: 1px; }
+    .logo span { color: var(--destaque); }
+    nav { display: flex; flex-wrap: wrap; gap: 14px; }
+    nav a { color: var(--texto); text-decoration: none; font-size: .95rem; }
+    nav a:hover { color: var(--destaque); }
+    .hero {
+      background: linear-gradient(135deg, #101827, #203d51);
+      color: var(--texto);
+      padding: 72px 7% 76px;
+    }
+    .hero-inner { max-width: 980px; margin: auto; }
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--destaque);
+      color: var(--destaque);
+      padding: 5px 12px;
+      border-radius: 30px;
+      font-size: .85rem;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.6rem); line-height: 1.12; margin: 8px 0 18px; }
+    .hero p { max-width: 720px; color: #d8e2ec; font-size: 1.1rem; }
+    .botao {
+      display: inline-block;
+      background: var(--destaque);
+      color: #082126;
+      padding: 11px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    main { max-width: 1100px; margin: auto; padding: 35px 22px 60px; }
+    section { margin: 0 0 35px; scroll-margin-top: 20px; }
+    h2 { color: #15283a; font-size: 1.7rem; margin-bottom: 8px; }
+    .intro { color: #536273; margin-top: 0; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .card {
+      background: white;
+      padding: 21px;
+      border-radius: 12px;
+      border: 1px solid #dce4ec;
+      box-shadow: 0 5px 16px rgba(15, 35, 55, .05);
+    }
+    .card h3 { margin: 0 0 7px; color: #19384d; }
+    .card p { margin: 0; color: #536273; }
+    .steps { padding-left: 22px; }
+    .steps li { margin: 9px 0; }
+    .specs { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; }
+    .specs th, .specs td { text-align: left; padding: 12px 14px; border-bottom: 1px solid #e1e7ed; }
+    .specs th { width: 38%; background: #eaf2f6; }
+    .doc-link { color: #087e7a; font-weight: bold; text-decoration: none; }
+    .doc-link:hover { text-decoration: underline; }
+    .notice { background: #e4f7f5; border-left: 4px solid var(--destaque); padding: 14px 17px; border-radius: 6px; }
+    footer { background: var(--fundo); color: #c3cfdd; padding: 24px 7%; text-align: center; }
+    footer strong { color: var(--destaque); }
+    @media (max-width: 600px) {
+      header { align-items: flex-start; }
+      .hero { padding-top: 48px; }
+      .specs th, .specs td { padding: 9px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">NEO<span>GAZE</span></div>
+    <nav>
+      <a href="#projeto">Projeto</a>
+      <a href="#funcionamento">Funcionamento</a>
+      <a href="#especificacoes">Especificações</a>
+      <a href="#documentos">Documentos</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="tag">Automação industrial</div>
+      <h1>Tratamento de superfície com mais segurança e padronização</h1>
+      <p>A NeoGaze propõe automatizar a preparação térmica da superfície de peças plásticas injetadas antes da pintura ou personalização, buscando melhorar a repetibilidade do processo e reduzir a exposição dos trabalhadores ao calor e à chama.</p>
+      <a class="botao" href="#projeto">Conheça o projeto</a>
+    </div>
+  </div>
+
+  <main>
+    <section id="projeto">
+      <h2>Sobre o projeto</h2>
+      <p class="intro">O projeto foi pensado para apoiar a linha de acabamento da IcePack, tornando a etapa de preparação da superfície mais organizada, controlada e segura.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Padronização</h3>
+          <p>Buscar condições de tratamento mais consistentes entre as peças.</p>
+        </div>
+        <div class="card">
+          <h3>Segurança</h3>
+          <p>Reduzir a necessidade de contato direto do operador com a região aquecida.</p>
+        </div>
+        <div class="card">
+          <h3>Produtividade</h3>
+          <p>Organizar o fluxo das peças e permitir melhor controle do tempo de processo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="funcionamento">
+      <h2>Como funciona</h2>
+      <p class="intro">Etapas gerais previstas para o conceito de automação:</p>
+      <ol class="steps">
+        <li>O operador posiciona a peça na esteira.</li>
+        <li>A esteira transporta a peça pela área de tratamento.</li>
+        <li>O sistema controla o tempo de exposição previsto para o processo.</li>
+        <li>A peça segue para a próxima etapa de acabamento, inspeção ou personalização.</li>
+      </ol>
+      <p class="notice"><strong>Importante:</strong> o tempo, a temperatura e a distância de tratamento devem ser definidos por testes e validação técnica. Este site apresenta o conceito do projeto, não um procedimento operacional para uso direto.</p>
+    </section>
+
+    <section id="especificacoes">
+      <h2>Especificações do conceito</h2>
+      <table class="specs">
+        <tr><th>Aplicação</th><td>Preparação superficial de peças plásticas injetadas</td></tr>
+        <tr><th>Câmara térmica</th><td>Aço inoxidável</td></tr>
+        <tr><th>Esteira transportadora</th><td>Aço inoxidável 310S, conforme a especificação atual do projeto</td></tr>
+        <tr><th>Controle pretendido</th><td>Tempo de processo e segurança da máquina</td></tr>
+        <tr><th>Objetivo</th><td>Mais padronização, segurança e eficiência</td></tr>
+      </table>
+    </section>
+
+    <section id="documentos">
+      <h2>Documentos do projeto</h2>
+      <p class="intro">Coloque os arquivos na pasta <strong>documentos</strong>, que fica junto deste arquivo. Depois, altere os nomes dos links abaixo para corresponder aos nomes dos seus arquivos.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>NeoGaze_5W2H</h3>
+          <p>Planejamento da solução e definição técnica.</p>
+          <p style="margin-top:12px">
+          <a class="doc-link"
+            href="documentos/NeoGaze_5W2H.pdf">
+            Abrir documento
+            </div>
+        <div class="card">
+          <h3>Descritivo de Funcionamento Técnico</h3>
+          <p>Descrição das etapas previstas para o sistema.</p>
+          <p style="margin-top:12px">
+          <a class="doc-link"
+             href="documentos/Descritivo de Funcionamento Técnico.pdf">
+             Abrir documento
+        </div>
+        <div class="card">
+          <h3>Fluxograma do projeto</h3>
+          <p>Descrição das etapas previstas para o sistema.</p>
+          <p style="margin-top:12px">
+          <a class="doc-link"
+             href="documentos/Fluxograma.pdf">
+             Abrir documento
+        </div>
+        <div class="card">
+          <h3>ROI da equipe NeoGaze 1</h3>
+          <p>Estimativa de custos e retorno do protótipo.</p>
+          <p style="margin-top:12px">
+          <a class="doc-link"
+             href="documentos/ROI da equipe NeoGaze 1.pdf">
+             Abrir documento
+        </div>
+        <div class="card">
+          <h3>NeoGaze_Brainstorming_Ideacao_Solucoes_Diferenciais</h3>
+          <p>Ideias e alternativas consideradas para a solução.</p>
+          <p style="margin-top:12px">
+          <a class="doc-link"
+             href="documentos/NeoGaze_Brainstorming_Ideacao_Solucoes_Diferenciais.pdf">
+             Abrir documento
+        </div>
+        <div class="card">
+          <h3>Pesquisa de Viabilidade Técnica e Econômica</h3>
+          <p>Estimativa de custos e viablidade do projeto.</p>
+          <p style="margin-top:12px">
+          <a class="doc-link"
+             href="documentos/Pesquisa de Viabilidade Técnica e Econômica.pdf">
+             Abrir documento
+        </div>
+        <div class="card">
+          <h3>Lean Canvas</h3>
+          <p>Mapa do projeto.</p>
+          <p style="margin-top:12px">
+          <a class="doc-link"
+             href="documentos/Lean Canvas.png"> 
+             Abrir documento
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>NeoGaze</strong> | Projeto de automação industrial</p>
+    <p>Conteúdo desenvolvido para apresentação do conceito do projeto.</p>
+  </footer>
+</body>
+</html>
